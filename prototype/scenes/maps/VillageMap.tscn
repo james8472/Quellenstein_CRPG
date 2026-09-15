@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b6sqm7en14hla"]
+
+[ext_resource type="Texture2D" uid="uid://ce38nv0plmirh" path="res://assets/maps/village_map1a.jpg" id="1_73i6q"]
+[ext_resource type="Script" uid="uid://dmrusugqn7qo5" path="res://scenes/camera_2da.gd" id="1_80giv"]
+[ext_resource type="PackedScene" uid="uid://bgo8050345opw" path="res://scenes/characters/greta.tscn" id="2_532b1"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_378k7"]
+vertices = PackedVector2Array(10, 394.96094, 10, 18, 910.4219, 18, 738.3125, 307.45313, 375.6797, 665.2422, 743.09375, 772.3594, 523.27344, 929.3594, 912.1719, 411.7578, 1112.6016, 283.46875, 1321.7578, 388.04688, 1258.2266, 491.29688, 1401.7109, 578.97656, 1297.4297, 727.9375, 952.2969, 876.96875)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 4, 3, 7), PackedInt32Array(8, 9, 10, 7), PackedInt32Array(7, 10, 11, 12, 13, 5)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1304, 736, 1416, 576, 1272, 488, 1336, 384, 1112, 272, 912, 400, 752, 304, 928, 8, 0, 8, 0, 400, 368, 672, 520, 944, 744, 784, 952, 888)])
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5ood"]
+size = Vector2(35, 80)
+
+[node name="VillageMap" type="Node2D" unique_id=2024854936]
+
+[node name="Background" type="Node2D" parent="." unique_id=614605141]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=359738444]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_73i6q")
+centered = false
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1645606375]
+navigation_polygon = SubResource("NavigationPolygon_378k7")
+
+[node name="Area2D" type="Area2D" parent="NavigationRegion2D" unique_id=2019589937]
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="NavigationRegion2D/Area2D" unique_id=352942297]
+vertices = PackedVector2Array(608, 728, 768, 632, 656, 528, 512, 632)
+
+[node name="Greta" parent="." unique_id=812193334 instance=ExtResource("2_532b1")]
+position = Vector2(760, 460)
+scale = Vector2(0.8, 0.8)
+speed = 185.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Greta" unique_id=1742628467]
+position = Vector2(9.999999, 0)
+shape = SubResource("RectangleShape2D_j5ood")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Greta" unique_id=57081761]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=816299096]
+position = Vector2(768, 456)
+script = ExtResource("1_80giv")

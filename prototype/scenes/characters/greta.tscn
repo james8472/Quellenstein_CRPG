@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bgo8050345opw"]
+
+[ext_resource type="Script" uid="uid://dvimc0bw1c3fv" path="res://scenes/greta.gd" id="1_xa0uq"]
+[ext_resource type="Texture2D" uid="uid://s8wwje4u4n5a" path="res://greta_cropped.png" id="2_wuui3"]
+
+[node name="Greta" type="CharacterBody2D" unique_id=812193334]
+script = ExtResource("1_xa0uq")
+speed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1824958182]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_wuui3")

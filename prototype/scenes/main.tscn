@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://2ttrdv5jjnb5"]
+
+[ext_resource type="Script" uid="uid://bba5ycuxlrel" path="res://scenes/camera_2d.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bgo8050345opw" path="res://scenes/characters/greta.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=330673809]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=678151857]
+script = ExtResource("1_sugp2")
+
+[node name="Greta" parent="." unique_id=812193334 instance=ExtResource("2_0wfyh")]
