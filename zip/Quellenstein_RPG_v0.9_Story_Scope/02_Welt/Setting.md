@@ -1,0 +1,1 @@
+Eltherana als Hintergrund. Roman dient nur als Lore und Setting.

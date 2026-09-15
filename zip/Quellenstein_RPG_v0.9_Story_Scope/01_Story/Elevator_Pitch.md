@@ -1,0 +1,1 @@
+Expedition untersucht eine Ruine im Wald nahe Immenfurt. Unter dem Tempel liegt ein uraltes Gefängnis.

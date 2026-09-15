@@ -1,0 +1,5 @@
+- 5 Helden
+- Feste Gruppe
+- Keine Quellenstein-Hauptstory
+- Alter Wald als Fokus
+- Max Level 10

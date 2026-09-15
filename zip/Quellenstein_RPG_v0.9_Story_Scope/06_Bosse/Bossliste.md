@@ -1,0 +1,1 @@
+Verderbter Waldbär, Kultistenpriester, Steinwächter, Hohepriester Vhal, Arzakar.

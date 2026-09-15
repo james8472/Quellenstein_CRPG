@@ -1,0 +1,1 @@
+Standardwerte für Wolf, Kultist, Bär, Schatten, Wächter.

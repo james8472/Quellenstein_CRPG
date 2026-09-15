@@ -1,0 +1,1 @@
+Normal, Selten, Episch, Relikt.

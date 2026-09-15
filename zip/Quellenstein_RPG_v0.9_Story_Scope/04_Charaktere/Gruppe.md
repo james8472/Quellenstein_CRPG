@@ -1,0 +1,1 @@
+Greta, Theron, Lyra, Borin, Zoran. Startgruppe und dauerhaft spielbar.

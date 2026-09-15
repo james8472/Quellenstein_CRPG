@@ -1,0 +1,1 @@
+Grundstruktur für aktive und passive Fähigkeiten.

@@ -1,0 +1,1 @@
+Porträts links, Aktionsleiste unten, Pause zentral.

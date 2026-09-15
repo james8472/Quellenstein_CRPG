@@ -1,0 +1,1 @@
+Max Level 10. Echtzeit mit Pause. Keine Rekrutierung. Fokus auf Dungeon und Story.

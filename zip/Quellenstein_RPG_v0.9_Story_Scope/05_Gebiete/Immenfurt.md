@@ -1,0 +1,1 @@
+Hubgebiet für Händler, Quests und Rast.
